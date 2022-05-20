@@ -1,0 +1,65 @@
+Todo App
+
+Descrição: Aplicação para o gerenciamento de projetos e suas tarefas.
+
+Objetivo: Resolver a questão de organização de tarefas de um ou vários projetos.
+
+Entidades:
+
+* Projeto
+	- Nome
+	- Descrição
+	- Data de Criação
+	- Data de Atualização
+* Tarefa
+	- Nome
+	- Descrição
+	- Status
+	- Observações
+	- Prazo
+	- Data de Criação
+	- Data de Atualização
+	- IdProjeto 
+
+Requisitos:
+
+* Permitir criar o Projetos
+* Permitir alterar o pojeto
+* Permitir deletar o pojeto
+
+* Permitir criar a Tarefa
+* Permitir alterar a Tarefa
+* Permitir deletar a Tarefa
+
+
+Regras de negócio:
+
+* Não irá conter um sistema de login
+* Não haverá o conceito de usuário
+* Toda tarefa deve pertencer a um projeto
+* Não podem haver tags repetidas numa mesma tarefa
+* Deve ser possível filtrar as tarefas por tags
+
+
+Tecnologias utilizadas:
+
+* Java
+* MySQL
+
+
+ETAPAS:
+
+- Criação do banco de dados 
+- Criação das classes de modelo 
+- Criação da conexão com o banco de dados 
+- Criação das classes de controle de controle {Acesso aos dados do banco}
+- Criação da interface gráfica
+     - Criação da tela principal
+          - Criação do CellRederer Prazo
+          - Criação do CellRederer Editar e Deletar
+     - Criação da tela de cadastro do projeto
+     - Criação da tela de cadastro de tarefas
+- Implementação dos eventos
+     - Validações
+- Ajustes finais
+- Teste da aplicação
